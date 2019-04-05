@@ -48,8 +48,8 @@ namespace AspNetCoreMVC.Controllers
         // GET: UpisNaPredmet/Create
         public IActionResult Create()
         {
-            ViewData["PredmetId"] = new SelectList(_context.Predmet, "PredmetId", "PredmetId");
-            ViewData["StudentId"] = new SelectList(_context.Student, "ID", "ID");
+            ViewData["PredmetId"] = new SelectList(_context.Predmet, "PredmetId", "Naziv");
+            ViewData["StudentId"] = new SelectList(_context.Student, "ID", "ImePrezime");
             return View();
         }
 
